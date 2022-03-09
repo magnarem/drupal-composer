@@ -12,9 +12,14 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        }
+        },
+	{
+	   "type": "vcs",
+	   "url": "https://github.com/metno/metsis-drupal.git"
+	}
     ],
     "require": {
+	"metsis/metsis-drupal": "master",
         "composer/installers": "^1.9",
         "drupal/address": "^1.9",
         "drupal/advanced_help": "^1.0",
@@ -207,6 +212,15 @@
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
+            ],
+	     "web/modules/": [
+                "type:drupal-metsis-module"
+            ],
+	     "web/modules/metno/{$name}": [
+                "type:drupal-metno-module"
+            ],
+             "web/modules/nordatanet/{$name}": [
+                "type:drupal-nordatanet-module"
             ],
             "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
