@@ -19,7 +19,6 @@
 	}
     ],
     "require": {
-	"metsis/metsis-drupal": "master",
         "composer/installers": "^1.9",
         "drupal/address": "^1.9",
         "drupal/advanced_help": "^1.0",
